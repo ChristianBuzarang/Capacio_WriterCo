@@ -1,0 +1,94 @@
+@page "/rate"
+@using WriterCo.Components.Layout
+@layout MainNewLayout
+
+<div class="rating-container">
+    <h2>Rate Our Website!</h2>
+
+    <div class="stars">
+        @for (int i = 1; i <= 5; i++)
+        {
+            var starValue = i; 
+            <span class="star @(starValue <= currentRating ? "filled" : "")" 
+                  @onclick="() => SetRating(starValue)">
+                ★
+            </span>
+        }
+    </div>
+
+    <div class="comment-section">
+        <label>Comments:</label>
+        <textarea @bind="commentText" placeholder="Tell us what you think..." rows="4"></textarea>
+    </div>
+
+    <div class="action-section">
+        <button class="post-btn" @onclick="SubmitReview">Post</button>
+    </div>
+
+    @if (showSuccessMessage)
+    {
+        <div class="success-message">
+            Thank you! Your review has been posted.
+        </div>
+    }
+
+    @if (reviews.Any())
+    {
+        <div class="reviews-list">
+            <h3>Recent Feedback</h3>
+            @foreach (var review in reviews)
+            {
+                <div class="review-item">
+                    <div class="review-stars">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <span class="star-small @(i <= review.Rating ? "filled" : "")">★</span>
+                        }
+                    </div>
+                    <p class="review-text">@review.Comment</p>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    public class Review
+    {
+        public int Rating { get; set; }
+        public string Comment { get; set; } = string.Empty;
+    }
+
+    private int currentRating = 0;
+    private string commentText = "";
+    private bool showSuccessMessage = false;
+
+    private List<Review> reviews = new List<Review>();
+
+    private void SetRating(int rating)
+    {
+        currentRating = rating;
+        showSuccessMessage = false; 
+    }
+
+    private void SubmitReview()
+    {
+        if (currentRating == 0)
+        {
+            return;
+        }
+
+        var newReview = new Review
+        {
+            Rating = currentRating,
+            Comment = commentText
+        };
+        
+        reviews.Add(newReview);
+
+        showSuccessMessage = true;
+        
+        currentRating = 0;
+        commentText = "";
+    }
+}

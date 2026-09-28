@@ -30,7 +30,20 @@
 .navbar nav[b-f25ms1vc7x] {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+}
+
+.nav-link[b-f25ms1vc7x] {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover[b-f25ms1vc7x] {
+  opacity: 0.7;
 }
 
 .nav-btn[b-f25ms1vc7x] {

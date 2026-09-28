@@ -5,6 +5,10 @@
     <header class="navbar">
         <a href="/" class="logo">Writer Co.</a>
         <nav>
+            <span @onclick="GoToRating" class="nav-link">
+                Rate Us
+            </span>
+
             <button @onclick="GoToLogin" class="nav-btn">
                 Sign In
             </button>
@@ -29,5 +33,10 @@
     private void GoToRegister()
     {
         Navigation.NavigateTo("/register");
+    }
+
+    private void GoToRating()
+    {
+        Navigation.NavigateTo("/rate");
     }
 }
