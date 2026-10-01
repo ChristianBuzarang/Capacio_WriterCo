@@ -6,7 +6,7 @@
     <input type="email" placeholder="Enter Email" />
     <input type="password" placeholder="Enter Password" />
 
-    <button>Sign Up</button>
+    <button @onclick="GoToDashboard">Sign Up</button>
 
     <p>Already have an account? <span @onclick="Login" class="nav-link">Log In</span></p>
 </div>
@@ -18,5 +18,9 @@
     private void Login()
     {
         Navigation.NavigateTo("/login");
+    }
+    private void GoToDashboard()
+    {
+        Navigation.NavigateTo("/dashboard");
     }
 }

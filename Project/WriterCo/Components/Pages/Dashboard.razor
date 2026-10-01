@@ -1,0 +1,50 @@
+@page "/dashboard"
+@using WriterCo.Components.Layout
+@layout MainNewLayout
+@inject NavigationManager Navigation
+
+<div class="dashboard-container">
+    <div class="document-grid">
+        
+        <div class="doc-item" @onclick="CreateNewDocument">
+            <div class="doc-thumbnail new-doc">
+                <span class="plus-icon">+</span>
+            </div>
+            <span class="doc-title">New</span>
+        </div>
+
+        @foreach (var doc in userDocuments)
+        {
+            <div class="doc-item" @onclick="() => OpenDocument(doc.Id)">
+                <div class="doc-thumbnail">
+                </div>
+                <span class="doc-title">@doc.Title</span>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    public class DocumentItem
+    {
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Title { get; set; } = "Untitled";
+    }
+
+    private List<DocumentItem> userDocuments = new List<DocumentItem>();
+
+    protected override void OnInitialized()
+    {
+        userDocuments.Add(new DocumentItem { Title = "Untitled" });
+    }
+
+    private void CreateNewDocument()
+    {
+        Navigation.NavigateTo("/document");
+    }
+
+    private void OpenDocument(string id)
+    {
+        Navigation.NavigateTo($"/document"); 
+    }
+}
