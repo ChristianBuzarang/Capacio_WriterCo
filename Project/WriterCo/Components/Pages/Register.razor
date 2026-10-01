@@ -1,14 +1,16 @@
 @page "/register"
 @using WriterCo.Components.Layout
 @layout AuthLayout
-<div class="register-form">
-    <input type="text" placeholder="Enter Username" />
-    <input type="email" placeholder="Enter Email" />
-    <input type="password" placeholder="Enter Password" />
+<div class="auth-form">
+    <input type="text" class="auth-input" placeholder="Enter Username" />
+    <input type="email" class="auth-input" placeholder="Enter Email" />
+    <input type="password" class="auth-input" placeholder="Enter Password" />
 
-    <button @onclick="GoToDashboard">Sign Up</button>
+    <button class="auth-btn" @onclick="GoToDashboard">Sign Up</button>
 
-    <p>Already have an account? <span @onclick="Login" class="nav-link">Log In</span></p>
+    <p class="auth-footer">
+        Already have an account? <span @onclick="Login" class="nav-link">Log In</span>
+    </p>
 </div>
 
 @code {
