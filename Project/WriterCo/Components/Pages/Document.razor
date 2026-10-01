@@ -1,0 +1,86 @@
+@page "/document"
+@using WriterCo.Components.Layout
+@layout MainNewLayout
+
+<div class="editor-layout">
+    
+    <div class="sidebar">
+        <div class="menu-container">
+            <button class="icon-btn hamburger" @onclick="ToggleMenu">
+                &#9776;
+            </button>
+            
+            @if (isMenuOpen)
+            {
+                <div class="dropdown-menu">
+                    <button @onclick="NewFile">New</button>
+                    <button @onclick="OpenFile">Open</button>
+                    <button @onclick="SaveFile">Save</button>
+                </div>
+            }
+        </div>
+
+        <div class="outline-panel">
+            @foreach (var item in outlineItems)
+            {
+                <div class="outline-item">@item</div>
+            }
+            <div class="outline-item">
+                <input @bind="input" @onkeydown="AddOutlineItem" placeholder="Add Item"/>
+                </div>
+        </div>
+    </div> 
+
+    <div class="editor-main">
+        <div class="toolbar">
+            <button class="tool-btn">B</button>
+            <button class="tool-btn"><i>I</i></button>
+            <button class="tool-btn"><u>U</u></button>
+            <button class="tool-btn">A</button>
+            <button class="tool-btn">🔗</button>
+            <button class="tool-btn">≡</button>
+            <button class="tool-btn">S</button>
+        </div>
+
+        <div class="paper-container">
+            <textarea class="paper" placeholder="Start writing..."></textarea>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isMenuOpen = false;
+    private string input = string.Empty;
+    private List<string> outlineItems = new List<string> {};
+    
+    private void AddOutlineItem(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrWhiteSpace(input))
+        {
+            outlineItems.Add(input);
+            input = string.Empty;
+        }
+    }
+
+    private void ToggleMenu()
+    {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    private void NewFile()
+    {
+        isMenuOpen = false;
+        Console.WriteLine("New file created");
+    }
+
+    private void OpenFile()
+    {
+        isMenuOpen = false;
+    }
+
+    private void SaveFile()
+    {
+        isMenuOpen = false;
+        Console.WriteLine("File saved");
+    }
+}
