@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj": {}
+    "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj": {
+    "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
+        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
         "projectName": "WriterCo",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
+        "projectPath": "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\obj\\",
+        "outputPath": "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

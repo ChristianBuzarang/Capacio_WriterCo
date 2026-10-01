@@ -1,0 +1,31 @@
+@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+
+<div class="main-layout">
+    <header class="navbar">
+        <a @onclick="GoToHome" class="logo">Writer Co.</a>
+        <nav>
+            <span @onclick="GoToRating" class="nav-link">
+                Rate Us
+            </span>
+            <div class="profile-container">
+                <img src="/images/user-icon.jpg" alt="User" class="user-icon" />
+            </div>
+        </nav>
+    </header>
+    
+    <main class="content">
+        @Body
+    </main>
+</div>
+
+@code {
+    private void GoToHome()
+    {
+        Navigation.NavigateTo("/dashboard");
+    }
+    private void GoToRating()
+    {
+        Navigation.NavigateTo("/rate");
+    }
+}

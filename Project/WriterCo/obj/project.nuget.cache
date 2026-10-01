@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wtzH1lEMXLw=",
+  "dgSpecHash": "4pzOnPPKovc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
+  "projectFilePath": "c:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.31\\microsoft.netcore.app.ref.8.0.31.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.31\\microsoft.windowsdesktop.app.ref.8.0.31.nupkg.sha512",

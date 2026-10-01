@@ -35,3 +35,4 @@ C:\Users\Admin\Desktop\Keisha\School\Taboada\WriterCo\Capacio_WriterCo\Project\W
 C:\Users\Admin\Desktop\Keisha\School\Taboada\WriterCo\Capacio_WriterCo\Project\WriterCo\obj\Debug\net8.0\scopedcss\Components\Pages\Rate.razor.rz.scp.css
 C:\Users\Admin\Desktop\Keisha\School\Taboada\WriterCo\Capacio_WriterCo\Project\WriterCo\obj\Debug\net8.0\scopedcss\Components\Pages\Dashboard.razor.rz.scp.css
 C:\Users\Admin\Desktop\Keisha\School\Taboada\WriterCo\Capacio_WriterCo\Project\WriterCo\obj\Debug\net8.0\scopedcss\Components\Pages\Document.razor.rz.scp.css
+C:\Users\Admin\Desktop\Keisha\School\Taboada\WriterCo\Capacio_WriterCo\Project\WriterCo\obj\Debug\net8.0\scopedcss\Components\Layout\SignedLayout.razor.rz.scp.css
