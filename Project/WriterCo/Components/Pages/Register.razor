@@ -7,4 +7,16 @@
     <input type="password" placeholder="Enter Password" />
 
     <button>Sign Up</button>
+
+    <p>Already have an account? <span @onclick="Login" class="nav-link">Log In</span></p>
 </div>
+
+@code {
+    [Inject]
+    private NavigationManager Navigation { get; set; } = default!;
+
+    private void Login()
+    {
+        Navigation.NavigateTo("/login");
+    }
+}
