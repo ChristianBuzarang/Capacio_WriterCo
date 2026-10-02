@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\caimo\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caimo\\OneDrive\\Documents\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
       "projectName": "WriterCo",
-      "projectPath": "C:\\Users\\caimo\\OneDrive\\Documents\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
-      "packagesPath": "C:\\Users\\caimo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caimo\\OneDrive\\Documents\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\WriterCo.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Keisha\\School\\Taboada\\WriterCo\\Capacio_WriterCo\\Project\\WriterCo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\caimo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,6 +69,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.31, 8.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.31, 8.0.31]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.31, 8.0.31]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.31, 8.0.31]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
